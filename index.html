@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head prefix="foaf: http://xmlns.com/foaf/0.1/">
+    <title>Discovery of Heterogeneous Interfaces in Decentralized Environments</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="shower/themes/material/styles/styles.css">
+    <link rel="stylesheet" href="styles/rt-custom.css" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css' />
+    
+    <link rel="foaf:maker" href="https://www.rubensworks.net/#me" />
+
+    <style>
+      .shower {
+        --slide-ratio: calc(16 / 9);
+      }
+    </style>
+  </head>
+
+  <body class="shower list" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# foaf: http://xmlns.com/foaf/0.1/ owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# org: http://www.w3.org/ns/org# schema: http://schema.org/ cite: http://purl.org/spar/cito/" typeof="schema:PresentationDigitalDocument">
+    <header class="caption">
+      <div class="title">
+        <h1 property="schema:name">Discovery of Heterogeneous Interfaces in Decentralized Environments</h1>
+      </div>
+      <div class="captiondata">
+        <p class="author" rel="schema:author"><a href="https://www.rubensworks.net/#me">Ruben Taelman</a></p>
+        <p class="venue">
+          <a href="https://github.com/MaastrichtU-IDS/FedQuery2024">FedQuery 2024</a>, <span rel="schema:datePublished">26 June 2024</span></a>
+        </p>
+      </div>
+    </header>
+
+    <section id="title" class="slide title" inlist="" rel="schema:hasPart" resource="#title">
+      <h2 property="schema:name" style="font-size: 3em">Discovery of Heterogeneous Interfaces in Decentralized Environments</h2>
+      <ul class="author inline">
+          <li class="current"><a href="https://id.eriador.io/jonni">Jonni Hanski</a></li>
+          <li class="current"><a href="#bryant">Bryan-Elliott Tam</a></li>
+          <li class="current"><a href="#rubene">Ruben Eschauzier</a></li>
+          <li class="current"><a href="https://www.rubensworks.net/">Ruben Taelman</a></li>
+      </ul>
+      <p class="affiliation"><a href="http://idlab.technology/">Ghent University – imec – IDLab, Belgium</a></p>
+    </section>
+
+    <section id="pods" class="slide" inlist="" rel="schema:hasPart" resource="#pods">
+      <h2 property="schema:name">Highly decentralized environments</h2>
+      <h3>Personal data pods spread across the Web (Solid, Bluesky, ...)</h2>
+      <center>
+          <img src="img/solid-pods.svg" alt="Solid Pods" width="500px" />
+      </center>
+    </section>
+	
+    <section id="document-oriented" class="slide" inlist="" rel="schema:hasPart" resource="#document-oriented">
+      <h2 property="schema:name">Solid pods: document-oriented interface</h2>
+      <h3>Link Traversal Query Processing</h3>
+      <center>
+          <img src="img/follow-links.svg" alt="Follow links" width="700px" />
+      </center>
+    </section>
+    
+    <section id="hybrid" class="slide" inlist="" rel="schema:hasPart" resource="#hybrid">
+      <h2 property="schema:name">Towards heterogeneous interfaces</h2>
+      <ul>
+          <li>
+              <h3>Different pods can expose different types of interfaces</h3>
+              <span class="indent">SPARQL endpoint, TPF, SaGe, SPF, ...</span>
+          </li>
+          <li>
+              <h3>How to query over them without prior knowledge?</h3>
+              <span class="indent">Discovery during execution</span><br \>
+              <span class="indent">Adaptive incorporation into query plan</span>
+          </li>
+      </ul>
+      <center>
+          <img src="img/vault-query-api.svg" alt="Follow links" width="230px" />
+      </center>
+    </section>
+    
+    <section id="goals" class="slide" inlist="" rel="schema:hasPart" resource="#goals">
+      <h2 property="schema:name">Goal: Implement and test prototypes</h2>
+      <ul>
+          <li>
+              <h3>Querying over heterogeneous interfaces</h3>
+              <span class="indent">Discovery <em>and</em> adaptive query planning</span>
+          </li>
+          <li>
+              <h3>Based on extension of SolidBench</h3>
+              <span class="indent">Simulated Solid environment based on social networking use case</span><br \>
+              <span class="indent">Configurable fraction of pods can have SPARQL endpoint</span>
+          </li>
+      </ul>
+    </section>
+
+    <footer>
+      <p class="license">
+            &#169; <span property="schema:copyrightYear">2024</span> <a href="https://www.rubensworks.net" rel="schema:copyrightHolder"><span resource="https://www.rubensworks.net/#me">Ruben Taelman</span></a>
+            — <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" property="schema:license">Creative Commons Attribution 4.0</a>, unless otherwise indicated.
+      </p>
+      <a href="https://github.com/rubensworks/slides-2024-fedquery-heterogeneous-discovery">Source</a>
+    </footer>
+
+    <script src="shower/shower.min.js"></script>
+  </body>
+</html>
